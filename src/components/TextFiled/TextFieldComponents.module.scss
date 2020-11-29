@@ -1,0 +1,31 @@
+.textfield_wrapper {
+  position: relative;
+  width: 250px;
+
+  & > i:nth-child(1) {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  & > i:nth-child(2) {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px 40px 15px 40px;
+  box-sizing: border-box;
+}
+
