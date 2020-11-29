@@ -1,5 +1,5 @@
-import React from "react";
-import CheckboxComponents from "../components";
+import React from 'react';
+import CheckboxComponents from '../components/Checkbox';
 
 function CheckboxContainers() {
   return (

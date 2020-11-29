@@ -1,0 +1,40 @@
+.checkbox_wrapper {
+    position: relative;
+    margin: 10px 0;
+  
+    &:hover > label:before {
+        background: #ccc;
+    }
+  }
+  
+  input[type=checkbox] {
+      display: none;
+  
+      &+label {
+          cursor: pointer;
+          padding-left: 25px;
+      }
+  
+      &+label:before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute; // display block 요소로 변경
+          left: 0;
+          top: 0;
+          border: 1px solid gray;
+          background-color: #f7f7f7;
+          border-radius: 2px;
+      }
+  
+      &:checked+label:before {
+          content: "\2714";
+          font-size: 15px; 
+          font-weight:600; 
+          color: #fff;  
+          background:#2f87c1;
+          text-align: center;   
+      }
+  }
+  
+  
